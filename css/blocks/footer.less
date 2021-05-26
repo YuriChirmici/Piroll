@@ -1,0 +1,90 @@
+.footer {
+	background-color: @black;
+	padding: 6.67rem 0;
+	color: @gray-medium;
+
+	@media @tablet {
+		padding: 5.8rem 0;
+	}
+
+	@media @mobile {
+		padding: 5rem 0;
+	}
+
+	@media @mobile-sm {
+		padding: 3.7rem 0;
+	}
+}
+
+.footer__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.copyright,
+.footer__contacts {
+	@media @mobile {
+		width: 50%;
+		margin-bottom: 2.6rem;
+	}
+
+	@media @mobile-sm {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 2.6rem;
+	}
+}
+
+.copyright__company {
+	margin-bottom: 1.5rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.copyright__info {
+	font-family: @fontNunitoSans;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.footer__nav {
+	display: flex;
+
+	@media @mobile {
+		width: 66.6%;
+	}
+}
+
+.footer__nav-col {
+	&+& {
+		margin-left: 3rem;
+
+		@media @mobile {
+			margin-left: 2.7rem;
+		}
+
+		@media @mobile-sm {
+			margin-left: 2.3rem;
+		}
+	}
+}
+
+.footer__link {
+	margin-bottom: 0.4rem;
+	display: block;
+	color: @gray-medium;
+	transition: color .2s linear;
+
+	&:hover {
+		color: @cyan;
+	}
+}
+
+.footer__social {
+	@media @mobile {
+		width: 33.3%;
+	}
+}

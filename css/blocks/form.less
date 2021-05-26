@@ -1,0 +1,65 @@
+.input__mixin() {
+	margin-bottom: 2rem;
+	padding: 1rem;
+
+	width: 100%;
+
+	border: 0;
+	outline: 0;
+
+	font-family: @fontMontserrat;
+	font-size: 1rem;
+	font-weight: 400;
+	color: @black;
+
+	&:focus {
+		outline: 1px solid @cyan;
+	}
+
+	&::placeholder {
+		font-family: @fontMontserrat;
+		font-size: .8rem;
+		font-weight: 400;
+		color: @gray;
+	}
+}
+
+.form {
+	font-size: 0;
+}
+
+.form__input {
+	.input__mixin();
+	height: 3.33rem;
+}
+
+.form__textarea {
+	.input__mixin();
+
+	height: 11rem;
+	resize: none;
+
+	@media @mobile-sm {
+		height: 8rem;
+	}
+}
+
+
+// Modificators 
+ .form__input--sm {
+ 	width: 46%;
+
+ 	&+& {
+ 		margin-left: 8%;
+ 	}
+
+ 	@media @mobile-sm {
+		width: 100%;
+
+		&+& {
+	 		margin-left: 0;
+	 	}
+	}
+ }
+
+

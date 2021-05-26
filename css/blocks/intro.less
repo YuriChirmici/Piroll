@@ -1,0 +1,81 @@
+.intro {
+	padding: 15.7rem 0 13.3rem;
+	background: @gray-light url("../images/intro-bg.jpg") center no-repeat;
+	background-size: cover;
+
+	@media @notebook {
+		padding: 14rem 0 11.5rem;
+	}
+
+	@media @tablet {
+		padding: 11.5rem 0 10rem;
+	}
+
+	@media @mobile {
+		padding: 9rem 0 8rem;
+	}
+
+	@media @mobile-sm {
+		padding: 6rem 0 4rem;
+	}
+}
+
+.intro__inner {
+	display: flex;
+	justify-content: flex-end;
+
+	@media @tablet {
+		justify-content: center;
+	}
+}
+
+.intro__info {
+	width: 45%;
+	padding-right: 1.8rem;
+
+	@media @notebook {
+		width: 55%;
+		max-width: 580px;
+	}
+
+	@media @tablet {
+		width: 70%;
+	}
+
+	@media @mobile {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	@media @mobile-sm {
+		padding-right: 0;
+	}
+}
+
+.intro__title {
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	font-weight: 500;
+	color: @black;
+	line-height: 3.2rem;
+
+	@media @tablet {
+		font-size: 2.2rem;
+		margin-bottom: 1.8rem;
+	}
+
+	@media @mobile-sm {
+		font-size: 1.6rem;
+		margin-bottom: 1.3rem;
+	}
+}
+
+.intro__text {
+	margin-bottom: 2.4rem;
+
+	font-family: @fontNunitoSans;
+	font-weight: 400;
+	color: darken(@gray, 25%);
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
